@@ -1,0 +1,56 @@
+Project Name:
+    "NYT Reading List"
+
+Elevator Pitch:
+    The who:
+    Users hoping to create a reading list with various resources available through the NYT.
+
+    The value:
+    - Being able to conveniently search a large number of channels within the NYT media universe.
+    - Being able to create a personal reading list without having to create a NYT account.
+
+
+Dependencies:
+    - NYT API (https://developer.nytimes.com/apis) + fetch API
+    - npm modules
+    - PropTypes
+    - material UI 
+    - font awesome icons
+    - react router
+    - Jest & Enzyme (if bonus work and more elaborate testing)
+    - Firebase or local storage (if doing some of the bonus work)
+
+Tasks:
+    - Setup create-react-app scaffold
+    - Build basic UI with homepage and navbar routing to different search components
+    - Fetch NYT api search results
+    - Display search results on page including basic preview information
+    - Implement button on each result to add said result to reading list component
+    - Build reading list component to add/remove saved items and display them
+
+    Bonus:
+    - Allow display/hiding of reading list
+    - If items are already on list, provide feedback on page
+    - Implement local storage/ Firebase for reading list
+    - Offer pagination to go through search results X at a time
+    - Add "more by this author" search function
+    - Offer more comprehensive error handling
+    - Write more extensive tests
+
+Timeline:
+
+    by May 24:
+    - setup react-app scaffold
+    - basic UI
+
+    by May 31:
+    - fetch commands
+    - display results
+
+    by June 7:
+    - reading list component
+    - storage solution
+
+    by June 14:
+    - bonus items
+    - deploy and submit final project
