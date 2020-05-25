@@ -1,65 +1,52 @@
 # Week 7 Assignment
 
-Your assignment for this week is to think of a final project idea and create a plan for the project.
+## Elevator Pitch
+ For the final project, I would like to create a dictionary word search and word memorization application - This application allows users to search words from the owlbot dictionary api, then add select words to their collection to review later. Words in the users collection can be reviewed as flashcards or as dynamically generated tests. This a handy application for individuals to both look up the meanings of words and then review those words later to improve their vocabulary.
 
-## Final Project Requirements
+The main inspiration for this application comes from existing websites like dictionary.com and quizlet.com. Quizlet.com is application that allows you to create your own flashcards and quizzes. I'm hoping to make a simplified version of this by using pre-existing data from the owlbot api and focusing specifically on words rather than other types of media which is allowed on quizlet.com
 
-* The project must be a React application, bootstrapped with `create-react-app`
-* Your app must be created and visible in a Github repo under your Github account
-* Your app must be your own work. You may have a partner if you'd like, but be aware that you'll need to come up with a strategy for working together. Most developers on small projects create branches for new features/fixes, then merge them back into the `master` branch. Merge conflicts can arise, and you'll need to know how to resolve them.
-  * The simplest and most straightforward workflow for each team member:
-    ```bash
-    # create a branch off of master
-    git checkout master
-    git branch -b feat/new-feature-name
+While brainstorming I was focused on finding a project that would allow me to integrate all of the topics we have discussed including react-router, fetch api, firebase authentication, and firebase firestore.
 
-    # commit code to this branch
-    git add .
-    git commit -m 'more code'
+## Wireframes and Design Concept
+My design concept for this project is a minimalist approach with lots of whitespace and some pops of color with the patterns found [here](https://products.ls.graphics/paaatterns/) as inspiration. As a stretch goal I would love to set up a themeing functionality in which the user can change the theme and switch between a light and dark mode. Mobile responsiveness will be in consideration throughout the process of design and implementation as well.
 
-    # periodically push to Github
-    git push
-    ```
-  * Create pull requests on Github into the `master` branch when ready to merge code. It's recommended that you merge only working and/or tested code.
-* Your app should be deployed onto a web server and publicly accessible (unless you decide to use React Native. In that case, it's recommended you use [Expo](https://expo.io/) to share the project).
-* Your app should be polished. Some recommendations for this requirement:
-  * Remove `console.log` statements once you're finished with development
-  * Utilize CSS and images to make your app look great
-  * Check for any React errors in the console
-  * Perform some basic user testing. Have other people use your app and receive feedback on usability
-  * Keep your feature set small, so you'll have time to polish the app
-  * Write tests
-* If you're feeling adventurous, you can also use React to build mobile apps using the [React Native](https://reactnative.dev/) framework. Usage is allowed for this project, **but** note that it will involve additional learning and research. Proceed at your own risk.
+Here are some wireframes for the homepage, search results, and users' collection page. These are not all the view of the webpage, but a starting point to begin working on my final project.
 
-Other than the above requirements, you're encouraged to be creative and create something you're proud of. It can be as simple or as complex as you want, and it should be high quality.
+![Wireframe](/images/Views.png) 
 
-## Assignment Requirements
 
-Above are the requirements for the project. For this week however, you'll need to create a plan for your project. More details are to come, but you'll need to create a pull request with the following:
 
-* The name of your project
-* An elevator pitch (a paragraph about what your project does). Be sure to address:
-  * Who will use your project
-  * The value that your project will provide to the end user
-* [Wireframes](https://en.wikipedia.org/wiki/Website_wireframe) to help visualize what your project will look like
-  * These wireframes do not have to be high-fidelity. You're free to use boxes, hand drawings, tools such as Draw.io, etc.
-* A list of dependencies you'll be using for your project (npm modules, APIs, Firebase, etc.)
-  * This list will likely change as you work on your project, but listing your dependencies will help you visualize the complexity of the project
-* A list of tasks that need to be completed for your project
-  * Example list of tasks for the Star Wars films example:
-    * Setup `create-react-app` scaffold
-    * Call the Star Wars API and print results
-    * Store API results in React component state
-    * Render React state
-* A plan for the next 3 weeks and what you plan to accomplish each week
+## Dependencies
+  * React
+  * Firebase Authentication
+  * Firebase Firestore
+  * [Owlbot API](https://owlbot.info/) (for dictionary queries)
+  * [Wordnik API](https://developer.wordnik.com/) (to get "word of the day" functionality - still waiting to obtain the api key)
+  * [Styled Components](https://styled-components.com/) for CSS in JS
+  * React Router Dom for routing
+  * [Paaatterns](https://products.ls.graphics/paaatterns/) for themeing
+  * Proptypes
+  * Github pages for deployment
+## Tasks to Complete
+  Here are a list of tasks necessary to meet MVP
+  * Setup create-react-app scaffold
+  * Connect application with Firebase firestore and Authentication
+  * Set up react-router-dom routing to home, sign-in, and collection pages
+  * Create essential components like: navbar, searchbar, login, cards, etc.
+  * Set up fetch call to the owlbot api 
+  * Map api data to individual definition cards to display data
+  * Create function to save words to individual user's word collection through firestore
+  * Create collection page which collects individual user's word collection and display's data
+  * Create delete function to a remove individual word from a user's collection
+  * Create update form and function to add user's own examples and updates to a word in their collection
 
-## Recommendations
+  Once basic CRUD functionality and MVP tasks are met, I can begin working on some of the following bonus features
+  * Create a review page which puts individual words into flashcards like the codepen example I've created [here](https://codepen.io/wandrew8/pen/jObqLzv?__cf_chl_jschl_tk__=12c4d3f0683918315125247d7155b581e3a4f3da-1590361913-0-AWuQhqAvHemKxS0pEVdHBTzlq9URrXHB5lqtfheXNtLnW6cXGIAUZY_W0CBegEiqb-hn6Z9azsmVmFyguVYoxjy_ICPFeYqkyIPp8mHRP_qxfT21doxn419CwhtqOxyvrVm5bCQ3KTfdHoxpF-yEwp5lmwfsLxtI9WpCa1JoE4xH8yiL6Ybnuy6vncUbKPHvh-pEqVbO59AQVNlVNrUNNxij0MOakCp4-e8IN2vKasJLnXV-3AOZ4lzn_QfWCN39CoSylym3RGyppKQPvCDsOeWuzLpdJS0m_HFqJmtBGMAvNkMad33OS1b5FnHlpM2DB_Nb7swdogsm9L13UmxcB4uMjDygb2xarqJzCHe_RX9q) 
+  * Create a vocabulary test page in which words from a user's collection are randomly selected and used to dynamically generate a test. Similar functionality to the example [here](https://quizlet.com/22026755/test), but simplified. 
 
-* Keep the scope of your project small. A small, completed project is much better than a large, incomplete project. You can create a list of "nice to have" features that you can work on if you have time (similar to how our assignments have a main list of requirements and "bonus" items).
-* Ensure you have plenty of buffer time in your schedule. Life events pop up, and tasks can take longer than initially estimated.
-
-## Submitting your Project Idea
-
-1. Fork this repository
-2. Add your project name, elevator pitch, wireframes, dependencies, task list, and plan to the Github repo (you can add a markdown file + images or links to images)
-3. Create a pull request
+## Plan
+| Week          | Tasks to Complete                                                      | 
+| ------------- |----------------------------------------------------------------------| 
+| Week 1        | Scaffold out project<br>Install dependencies<br>Set up global styles and variables for use with styled components<br>Connect app to firebase store and authentication<br>Route pages using react router<br>Verify that the owlbot api connects properly and data can be used as intended<br>Build core components   | 
+| Week 2        | Build card components with data from owlbot API<br>Begin creating styled components<br>Make sure flow of core functionality is working and polished<br>Add create, update, and delete functionality to a user's word collection<br>      |  
+| Week 3        | <br>Deploy app and work out any bugs that may arise<br>Add extra components like modals, toasts, etc that may add to user flow<br>Stretch Goal - Add review page with user's word collection accessible as flashcards<br>Stretch Goal - Create themeing and light / dark modes<br>Super Stretch Goal - Create test page to dynamically generate tests based on user's word collection  |  
