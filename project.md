@@ -19,15 +19,16 @@ React:
 React
 react-router-dom
 grid or material ui
+firebase (auth)
 
 Bonus Items:
-Store data in Firebase
+Auth and Store Items in Firebase
 
 #### Tasks:
 
 1.  Create basic site that renders a UI with a screenscraper and make sure this has a clean look. 
 
-2.  Add testing.
+2.  Add testing + add Auth.
 
 3.  Add in calls to Auth0 for site usage.
 
@@ -40,7 +41,7 @@ Store data in Firebase
 - Clean UI showing a screenshot of a site when entered.  
 
 #### Week 2:
-- Ability to call APIs, render data and add testing.  
+- Ability to call APIs, render data and add testing.  Add Auth.  Determine if site is "safe" yes/no.
 
 ### Week 3:
 - I need an ability to say if the site is "safe" or not without having the user parse a lot of data.  I think this is pretty easy but if not I'll be working on it week 3.  Else, time to finish any bonus items, e.g add a site to a list and store locally or in Firebase.  
