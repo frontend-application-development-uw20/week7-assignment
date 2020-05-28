@@ -46,10 +46,9 @@ Add a filter to sort task according to the category or department it is related 
 
 **Plan**
 
-* May 28- June 3: Create tasks page with each component and render it without error
+* May 28- June 3: Create tasks page with each component and render it without error.
 * June3- June10: Add drag and drop functionality, checkbox and the filter. 
-* June 10-June 15: Improve CSS , write unit tests and deploy the project. 
-
+* June 10-June 15: Improve CSS , write unit tests and deploy the project.
 
 
 
