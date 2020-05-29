@@ -50,7 +50,7 @@ The Bus Arrival Dashboard should group the buses by stop and sort them by arriva
 
 ### May 23-24 2020
 
-- [ ] Create Rails backend API
+- [x] Create Rails backend API
 
 ### May 30-31 2020
 
