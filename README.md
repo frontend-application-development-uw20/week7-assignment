@@ -1,65 +1,69 @@
-# Week 7 Assignment
+# Bus Arrival Dashboard
 
-Your assignment for this week is to think of a final project idea and create a plan for the project.
+Google, OneBusAway, and other apps offer real-time bus arrival information. The OneBusAway app even displays animation with bus locations.
 
-## Final Project Requirements
+Sometimes you need something much simpler. I live close to two bus stops and different buses that can get me to my destination (work) stop at each of them. A dashboard listing only the buses I am interested in at only the stops I am interested in would be a very good thing in the morning.
 
-* The project must be a React application, bootstrapped with `create-react-app`
-* Your app must be created and visible in a Github repo under your Github account
-* Your app must be your own work. You may have a partner if you'd like, but be aware that you'll need to come up with a strategy for working together. Most developers on small projects create branches for new features/fixes, then merge them back into the `master` branch. Merge conflicts can arise, and you'll need to know how to resolve them.
-  * The simplest and most straightforward workflow for each team member:
-    ```bash
-    # create a branch off of master
-    git checkout master
-    git branch -b feat/new-feature-name
+The Bus Arrival Dashboard should group the buses by stop and sort them by arrival time. Color coding the arrival times would help me decide which stop to walk toward.
 
-    # commit code to this branch
-    git add .
-    git commit -m 'more code'
+## Wireframes
 
-    # periodically push to Github
-    git push
-    ```
-  * Create pull requests on Github into the `master` branch when ready to merge code. It's recommended that you merge only working and/or tested code.
-* Your app should be deployed onto a web server and publicly accessible (unless you decide to use React Native. In that case, it's recommended you use [Expo](https://expo.io/) to share the project).
-* Your app should be polished. Some recommendations for this requirement:
-  * Remove `console.log` statements once you're finished with development
-  * Utilize CSS and images to make your app look great
-  * Check for any React errors in the console
-  * Perform some basic user testing. Have other people use your app and receive feedback on usability
-  * Keep your feature set small, so you'll have time to polish the app
-  * Write tests
-* If you're feeling adventurous, you can also use React to build mobile apps using the [React Native](https://reactnative.dev/) framework. Usage is allowed for this project, **but** note that it will involve additional learning and research. Proceed at your own risk.
+### Sign in
+![sign in](wireframes/images/images.001.png)
 
-Other than the above requirements, you're encouraged to be creative and create something you're proud of. It can be as simple or as complex as you want, and it should be high quality.
+### Main page
+![main page](./wireframes/images/images.007.png)
 
-## Assignment Requirements
+### Admin
+![enter bus number](./wireframes/images/images.002.png)
 
-Above are the requirements for the project. For this week however, you'll need to create a plan for your project. More details are to come, but you'll need to create a pull request with the following:
+![select direction of travel](./wireframes/images/images.003.png)
 
-* The name of your project
-* An elevator pitch (a paragraph about what your project does). Be sure to address:
-  * Who will use your project
-  * The value that your project will provide to the end user
-* [Wireframes](https://en.wikipedia.org/wiki/Website_wireframe) to help visualize what your project will look like
-  * These wireframes do not have to be high-fidelity. You're free to use boxes, hand drawings, tools such as Draw.io, etc.
-* A list of dependencies you'll be using for your project (npm modules, APIs, Firebase, etc.)
-  * This list will likely change as you work on your project, but listing your dependencies will help you visualize the complexity of the project
-* A list of tasks that need to be completed for your project
-  * Example list of tasks for the Star Wars films example:
-    * Setup `create-react-app` scaffold
-    * Call the Star Wars API and print results
-    * Store API results in React component state
-    * Render React state
-* A plan for the next 3 weeks and what you plan to accomplish each week
+![select stop](./wireframes/images/images.004.png)
 
-## Recommendations
+![add to group](./wireframes/images/images.005.png)
 
-* Keep the scope of your project small. A small, completed project is much better than a large, incomplete project. You can create a list of "nice to have" features that you can work on if you have time (similar to how our assignments have a main list of requirements and "bonus" items).
-* Ensure you have plenty of buffer time in your schedule. Life events pop up, and tasks can take longer than initially estimated.
+![new route added](./wireframes/images/images.006.png)
 
-## Submitting your Project Idea
+## Dependencies
 
-1. Fork this repository
-2. Add your project name, elevator pitch, wireframes, dependencies, task list, and plan to the Github repo (you can add a markdown file + images or links to images)
-3. Create a pull request
+* node-sass
+* OneBusAway API
+* A back end to send requests to OneBusAway API (Rails API app)
+* A host
+* Firebase for authentication and user data
+
+## Tasks
+
+- [ ] Rails backend app
+  - Routes
+    - [ ] Fetch route info for bus
+    - [ ] Fetch arrival info for bus at stop
+- [ ] Find host for Rails app
+  - [ ] Deploy to host
+- [ ] Create React App
+  - [ ] Sign in
+  - [ ] Admin
+  - [ ] Main page
+
+## Plan
+
+### May 23-24 2020
+
+- [x] Create Rails backend API
+
+### May 30-31 2020
+
+- [ ] Find host and deploy Rails API
+- [ ] Create React front end
+  - [ ] Authorization using Firebase
+  - [ ] Data storage using Firebase
+  - [ ] Admin page to add and remove buses and groups
+  - [ ] Main display
+
+### June 6-7 2020
+
+- [ ] Add navigation
+- [ ] Add CSS styles
+- [ ] Add any additional tests
+- [ ] Deploy to host
