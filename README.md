@@ -1,3 +1,100 @@
+# Name of project: BrainKwik (Working Title)
+
+## Elevator pitch
+
+BrainKwik is an online flash card creator that will help you memorize and study what you need fast. It is a well-designed, easy-to-use app that makes cramming for a test or remembering the names of members of your extended family easy. The initial scope of this app will focus on helping users build and study their own flash card sets. But it's also being built for scalability in which people can share and search for other flash card sets. (Not within the scope of this class.)
+
+## Expected dependencies
+
+* React router
+* Bootstap
+* Firebase
+
+## Tasks
+
+* Architect underlying database in firebase. Should be organized by User > Flash Card Set > Card
+  - Metadata for each flashcard set (Title, Times Practiced, Category, Shared with public (boolean), Last Practiced)
+  - Metadata for each card (Side A, Side B, Number of times answered, Number of times correct)
+* Build preset flash card sets in Firebase available to all users
+* Start create-react-app scaffold
+  - Install dependencies
+* Create firebase login screen route for app
+  - Minimum Google and by email
+* Set rules for database
+  - User can only access public card sets and self-created sets
+* Create UI for intro scene
+  - Clickable cards will be based on state from retrieved user data.
+  - Create CSS rules specific to card set categories
+* Create logic for click on intro scene cards
+  - Fetch flash card set from firebase and store in state
+  - If create new flash card set is clicked, create a new card set collection.
+* Create UI for flash card building screen (requires route)
+  - Create UI for new card sets which start with card picker.
+  - Implement form validations and checks
+  - Minimum set should have a category, a title and at least one complete card.
+  - Check validation on each card save.
+  - Store this information in state and send back to firebase on completion.
+* Create UI for flash card answering
+ - Serve up a random card for answering
+ - Build card flip UI CSS
+ - Store performance in state. Send performance to firebase on completion
+* Build React component for end of card set UI
+
+Reach goals:
+* Allow users to track how well they've been doing in each set.
+* Allow users to customize study sessions (number of cards, only cards below a certain success rate, etc.)
+* Allow users to share their sets with other users.
+
+## Wireframes
+
+See images in repository
+
+## Plan and timeline
+
+May 29 - May 31
+* Architect underlying database in firebase. Should be organized by User > Flash Card Set > Card
+  - Metadata for each flashcard set (Title, Times Practiced, Category, Shared with public (boolean), Last Practiced)
+  - Metadata for each card (Side A, Side B, Number of times answered, Number of times correct)
+* Build preset flash card sets in Firebase available to all users
+* Start create-react-app scaffold
+  - Install dependencies
+* Create firebase login screen route for app
+  - Minimum Google and by email
+* Set rules for database
+  - User can only access public card sets and self-created sets
+  
+June 1-June 5
+
+* Create UI for intro scene
+  - Clickable cards will be based on state from retrieved user data.
+  - Create CSS rules specific to card set categories
+* Create logic for click on intro scene cards
+  - Fetch flash card set from firebase and store in state
+  - If create new flash card set is clicked, create a new card set collection.
+* Create UI for flash card building screen (requires route)
+  - Create UI for new card sets which start with card picker.
+  - Implement form validations and checks
+  - Minimum set should have a category, a title and at least one complete card.
+  - Check validation on each card save.
+  - Store this information in state and send back to firebase on completion.
+* User test the flash card building
+  
+June 6-9
+* Create UI for flash card answering
+ - Serve up a random card for answering
+ - Build card flip UI CSS
+ - Store performance in state. Send performance to firebase on completion
+* Build React component for end of card set UI
+* User test the flash card answering
+
+June 10-14
+* Polish and bug removal
+
+June 15
+* Submit project
+ 
+---------
+
 # Week 7 Assignment
 
 Your assignment for this week is to think of a final project idea and create a plan for the project.
